@@ -5,6 +5,10 @@
     <div class="col-md-9">
         <h1 class="display-4">Welcome, Project Como!!</h1>
         <p class="lead">This is your homepage.</p>
+        <a routerLink="external/como" routerLinkActive="active" >
+            <fa-icon icon="user" fixedWidth="true"></fa-icon>
+            <span>Como</span>
+        </a>
 
         <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">

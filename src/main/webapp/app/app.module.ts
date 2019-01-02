@@ -20,6 +20,7 @@ import { Poc3JhipsterCustomizeUiEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
+import { ExternaluiModule } from './externalui/externalui.module';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         Poc3JhipsterCustomizeUiHomeModule,
         Poc3JhipsterCustomizeUiAccountModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        Poc3JhipsterCustomizeUiEntityModule
+        Poc3JhipsterCustomizeUiEntityModule,
+        ExternaluiModule
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
     providers: [
